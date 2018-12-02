@@ -20,7 +20,7 @@ public class Endereco {
     }
 
     public String getLogradouro() {
-        return this.logradouro;
+        return logradouro;
     }
 
     public void setLogradouro(String logradouro) {
@@ -28,7 +28,7 @@ public class Endereco {
     }
 
     public int getNumero() {
-        return this.numero;
+        return numero;
     }
 
     public void setNumero(int numero) {
@@ -36,7 +36,7 @@ public class Endereco {
     }
 
     public String getComplemento() {
-        return this.complemento;
+        return complemento;
     }
 
     public void setComplemento(String complemento) {
@@ -44,7 +44,7 @@ public class Endereco {
     }
 
     public String getBairro() {
-        return this.bairro;
+        return bairro;
     }
 
     public void setBairro(String bairro) {
@@ -52,7 +52,7 @@ public class Endereco {
     }
 
     public String getCidade() {
-        return this.cidade;
+        return cidade;
     }
 
     public void setCidade(String cidade) {
@@ -60,7 +60,7 @@ public class Endereco {
     }
 
     public String getUf() {
-        return this.uf;
+        return uf;
     }
 
     public void setUf(String uf) {
@@ -68,58 +68,22 @@ public class Endereco {
     }
 
     public String getCep() {
-        return this.cep;
+        return cep;
     }
 
     public void setCep(String cep) {
         this.cep = cep;
     }
 
-    public Endereco logradouro(String logradouro) {
-        this.logradouro = logradouro;
-        return this;
-    }
-
-    public Endereco numero(int numero) {
-        this.numero = numero;
-        return this;
-    }
-
-    public Endereco complemento(String complemento) {
-        this.complemento = complemento;
-        return this;
-    }
-
-    public Endereco bairro(String bairro) {
-        this.bairro = bairro;
-        return this;
-    }
-
-    public Endereco cidade(String cidade) {
-        this.cidade = cidade;
-        return this;
-    }
-
-    public Endereco uf(String uf) {
-        this.uf = uf;
-        return this;
-    }
-
-    public Endereco cep(String cep) {
-        this.cep = cep;
-        return this;
-    }
-
     @Override
     public String toString() {
-        return "{" +
-            " logradouro='" + getLogradouro() + "'" +
-            ", numero='" + getNumero() + "'" +
-            ", complemento='" + getComplemento() + "'" +
-            ", bairro='" + getBairro() + "'" +
-            ", cidade='" + getCidade() + "'" +
-            ", uf='" + getUf() + "'" +
-            ", cep='" + getCep() + "'" +
-            "}";
+        return "Endereco{" + 
+               "logradouro=" + logradouro + ", "
+                + "numero=" + numero + ", "
+                + "complemento=" + complemento + ", "
+                + "bairro=" + bairro + ", "
+                + "cidade=" + cidade + ", "
+                + "uf=" + uf + ", "
+                + "cep=" + cep + '}';
     }
 }

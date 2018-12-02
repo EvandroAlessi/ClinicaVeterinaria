@@ -1,11 +1,11 @@
 package clinicaVeterinaria;
 
 public class Pessoa extends EntidadeBase implements Controlador{
-    private String email;
-    private String telefone;
-    private Endereco endereco;
+    protected String email;
+    protected String telefone;
+    protected Endereco endereco;
 
-    public Pessoa(String email, String telefone, Endereco endereco){
+    public Pessoa(String email, String telefone, Endereco endereco) {
         this.email = email;
         this.telefone = telefone;
         this.endereco = endereco;
@@ -34,31 +34,29 @@ public class Pessoa extends EntidadeBase implements Controlador{
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
-    
-    
+
     @Override
-    public void cadastrar(){
-        // aqui tem a entrada de dados do Totó
+    public String toString() {
+        return "Pessoa{" + "email=" + email + ", telefone=" + telefone + ", endereco=" + endereco + '}';
     }
-    
+
     @Override
-    public void excluir(int id){
-        // aqui o totó é excluido
+    public Object buscar(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
     @Override
-    public void editar(Object object){
-        // aqui totó pode virar belinha
+    public void editar(Object object) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
     @Override
-    public Object buscar(int id){
-        // cade o totó?
-        return new Object();
+    public void excluir(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    //@Override;;
-    //public String toString() {
-      //  return "Pessoa{" + "nome=" +  + ", email=" + email + ", telefone=" + telefone + ", id=" + id + ", endereco=" + endereco + '}';
-    //}
+
+    @Override
+    public void cadastrar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

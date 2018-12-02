@@ -1,10 +1,8 @@
 package clinicaveterinaria;
 
 public class EntidadeBase {
-    private int ID;
-    private String nome;
-    private Endereco endereco;
-    private String email;
+    protected int ID;
+    protected String nome;
 
     public EntidadeBase(int ID, String nome) {
         this.ID = ID;
@@ -23,7 +21,12 @@ public class EntidadeBase {
         return nome;
     }
 
-    public void setNome(String Nome) {
-        this.nome = Nome;
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    @Override
+    public String toString() {
+        return "EntidadeBase{" + "ID=" + ID + ", nome=" + nome + '}';
     }
 }
