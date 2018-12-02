@@ -1,4 +1,4 @@
-package clinicaveterinaria;
+package clinicaVeterinaria;
 
 public class Raca extends EntidadeBase {
     private TipoAnimal tipoAnimal;
@@ -16,7 +16,7 @@ public class Raca extends EntidadeBase {
         this.tipoAnimal = tipoAnimal;
     }
 
-    @Override
+   
     public String toString() {
         return "Raca{" + "tipoAnimal=" + tipoAnimal + '}';
     }

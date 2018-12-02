@@ -4,10 +4,12 @@ public class Veterinario extends Pessoa{
     private String registro;
     private double salario;
 
-    public Veterinario(String nome, String email, String telefone, int id, Endereco endereco) {
-        super(nome, email, telefone, id, endereco);
+    public Veterinario(String registro, double salario, String email, String nome, String telefone, Endereco endereco) {
+        super(email, nome, telefone, endereco);
+        this.registro = registro;
+        this.salario = salario;
     }
-
+    
     public String getRegistro() {
         return registro;
     }

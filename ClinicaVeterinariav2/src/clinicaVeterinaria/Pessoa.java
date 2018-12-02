@@ -1,12 +1,15 @@
 package clinicaVeterinaria;
 
-public class Pessoa extends EntidadeBase implements Controlador{
+
+public class Pessoa implements Controlador {
     protected String email;
+    protected String nome;
     protected String telefone;
     protected Endereco endereco;
 
-    public Pessoa(String email, String telefone, Endereco endereco) {
+    public Pessoa(String email, String nome, String telefone, Endereco endereco) {
         this.email = email;
+        this.nome = nome;
         this.telefone = telefone;
         this.endereco = endereco;
     }
@@ -17,6 +20,14 @@ public class Pessoa extends EntidadeBase implements Controlador{
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getTelefone() {
@@ -33,11 +44,6 @@ public class Pessoa extends EntidadeBase implements Controlador{
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
-    }
-
-    @Override
-    public String toString() {
-        return "Pessoa{" + "email=" + email + ", telefone=" + telefone + ", endereco=" + endereco + '}';
     }
 
     @Override

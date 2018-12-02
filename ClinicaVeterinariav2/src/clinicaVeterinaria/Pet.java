@@ -1,10 +1,12 @@
 package clinicaVeterinaria;
 
-public class Pet extends EntidadeBase implements Controlador {
+public class Pet implements Controlador {
+    protected String nome;
     private String sexo;
     private int idade;
 
-    public Pet(String sexo, int idade, String nome, int id) {
+    public Pet(String nome, String sexo, int idade) {
+        this.nome = nome;
         this.sexo = sexo;
         this.idade = idade;
     }
@@ -23,5 +25,33 @@ public class Pet extends EntidadeBase implements Controlador {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    @Override
+    public Object buscar(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void editar(Object object) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void excluir(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void cadastrar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

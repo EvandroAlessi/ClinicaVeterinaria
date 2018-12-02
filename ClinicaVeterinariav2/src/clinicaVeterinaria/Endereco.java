@@ -1,4 +1,4 @@
-package clinicaveterinaria;
+package clinicaVeterinaria;
 
 public class Endereco {
     private String logradouro;
