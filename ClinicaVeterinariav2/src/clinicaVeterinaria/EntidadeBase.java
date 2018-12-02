@@ -1,22 +1,29 @@
-package clinicaVeterinaria;
+package clinicaveterinaria;
 
 public class EntidadeBase {
-    protected String nome;
-    protected int id;
+    private int ID;
+    private String nome;
+    private Endereco endereco;
+    private String email;
+
+    public EntidadeBase(int ID, String nome) {
+        this.ID = ID;
+        this.nome = nome;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
 
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public void setNome(String Nome) {
+        this.nome = Nome;
     }
 }

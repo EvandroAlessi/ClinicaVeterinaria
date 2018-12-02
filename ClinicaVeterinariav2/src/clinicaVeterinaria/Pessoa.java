@@ -5,20 +5,10 @@ public class Pessoa extends EntidadeBase implements Controlador{
     private String telefone;
     private Endereco endereco;
 
-    public Pessoa(String nome, String email, String telefone, int id, Endereco endereco){
-        this.nome = nome;
+    public Pessoa(String email, String telefone, Endereco endereco){
         this.email = email;
         this.telefone = telefone;
-        this.id = id;
         this.endereco = endereco;
-    }
-    
-    public String getNome() {
-        return this.nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 
     public String getEmail() {
@@ -35,14 +25,6 @@ public class Pessoa extends EntidadeBase implements Controlador{
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public Endereco getEndereco() {
@@ -65,17 +47,18 @@ public class Pessoa extends EntidadeBase implements Controlador{
     }
     
     @Override
-    public void editar(Object obj){
+    public void editar(Object object){
         // aqui totó pode virar belinha
     }
     
+    @Override
     public Object buscar(int id){
         // cade o totó?
         return new Object();
     }
     
-    @Override
-    public String toString() {
-        return "Pessoa{" + "nome=" + nome + ", email=" + email + ", telefone=" + telefone + ", id=" + id + ", endereco=" + endereco + '}';
-    }
+    //@Override;;
+    //public String toString() {
+      //  return "Pessoa{" + "nome=" +  + ", email=" + email + ", telefone=" + telefone + ", id=" + id + ", endereco=" + endereco + '}';
+    //}
 }

@@ -1,22 +1,29 @@
-package clinicaVeterinaria;
+package clinicaveterinaria;
 
 public class Cliente extends Pessoa{
     private String CPF;
-
-    public Cliente(String nome, String email, String telefone, int id, Endereco endereco) {
-        super(nome, email, telefone, id, endereco);
+    
+    public Cliente(String CPF, int ID, String nome) {
+        super(ID, nome);
+        this.CPF = CPF;
     }
-
-    @Override
-    public String toString() {
-        return super.toString()+"Cliente{" + "CPF=" + CPF + '}';
-    }
-
+    
     public String getCPF() {
-        return CPF;
+        return this.CPF;
     }
 
     public void setCPF(String CPF) {
         this.CPF = CPF;
+    }
+
+    public Cliente CPF(String CPF) {
+        this.CPF = CPF;
+        return this;
+    }
+
+    public String toString() {
+        return "{" +
+            " CPF='" + getCPF() + "'" +
+            "}";
     }
 }

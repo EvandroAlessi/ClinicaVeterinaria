@@ -1,5 +1,24 @@
-package clinicaVeterinaria;
+package clinicaveterinaria;
 
-public class Raca {
-    private String nome;
+public class Raca extends EntidadeBase {
+    private TipoAnimal tipoAnimal;
+
+    public Raca(TipoAnimal tipoAnimal, int ID, String nome) {
+        super(ID, nome);
+        this.tipoAnimal = tipoAnimal;
+    }
+
+    public TipoAnimal getTipoAnimal() {
+        return tipoAnimal;
+    }
+
+    public void setTipoAnimal(TipoAnimal tipoAnimal) {
+        this.tipoAnimal = tipoAnimal;
+    }
+
+    @Override
+    public String toString() {
+        return "Raca{" + "tipoAnimal=" + tipoAnimal + '}';
+    }
+    
 }
