@@ -1,12 +1,16 @@
 package clinicaVeterinaria;
 
+import java.util.List;
+
 public class Raca implements Controlador{
     private TipoAnimal tipoAnimal;
+    private List<Pet> pets;
     private String nome;
 
-    public Raca(TipoAnimal tipoAnimal, String nome) {
+    public Raca(TipoAnimal tipoAnimal, String nome, List<Pet> pets) {
         this.tipoAnimal = tipoAnimal;
         this.nome = nome;
+        this.pets = pets;
     }
 
     public void setTipoAnimal(TipoAnimal tipoAnimal) {
@@ -19,6 +23,14 @@ public class Raca implements Controlador{
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+    
+    public Pet getPets() {
+        return pets;
+    }
+
+    public void setPets(Pet pets) {
+        this.pets = pets;
     }
     
     @Override
