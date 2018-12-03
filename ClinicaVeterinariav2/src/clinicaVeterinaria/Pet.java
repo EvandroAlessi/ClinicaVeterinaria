@@ -1,7 +1,8 @@
 package clinicaVeterinaria;
 
 public class Pet implements Controlador {
-    protected String nome;
+    private int id;
+    private String nome;
     private String sexo;
     private int idade;
 
@@ -13,6 +14,14 @@ public class Pet implements Controlador {
     
     public String getSexo() {
         return sexo;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setSexo(String sexo) {
@@ -42,16 +51,22 @@ public class Pet implements Controlador {
 
     @Override
     public void editar(Object object) {
+        Validate validate = new Validate();
+        validate.validarUsuario();
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void excluir(int id) {
+        Validate validate = new Validate();
+        validate.validarUsuario();
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void cadastrar() {
+        Validate validate = new Validate();
+        validate.validarUsuario();
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

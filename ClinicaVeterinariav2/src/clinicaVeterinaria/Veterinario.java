@@ -1,6 +1,6 @@
 package clinicaVeterinaria;
 
-public class Veterinario extends Pessoa{
+public class Veterinario extends Pessoa implements Controlador{
     private String registro;
     private double salario;
 
@@ -10,6 +10,14 @@ public class Veterinario extends Pessoa{
         this.salario = salario;
     }
     
+    public Veterinario buscarVeterinario(){
+        return this;
+    }
+    
+    public void realizarConsulta(int id){
+        
+    }
+    
     public String getRegistro() {
         return registro;
     }
@@ -17,17 +25,38 @@ public class Veterinario extends Pessoa{
     public void setRegistro(String registro) {
         this.registro = registro;
     }
-
-    @Override
-    public String toString() {
-        return super.toString()+"Veterinario{" + "registro=" + registro + ", salario=" + salario + '}';
-    }
-
+    
     public double getSalario() {
         return salario;
     }
 
     public void setSalario(double salario) {
         this.salario = salario;
+    }
+    
+    @Override
+    public Object buscar(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void editar(Object object) {
+        Validate validate = new Validate();
+        validate.validarUsuario();
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void excluir(int id) {
+        Validate validate = new Validate();
+        validate.validarUsuario();
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void cadastrar() {
+        Validate validate = new Validate();
+        validate.validarUsuario();
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
