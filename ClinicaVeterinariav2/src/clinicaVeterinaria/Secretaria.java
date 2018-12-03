@@ -8,6 +8,14 @@ public class Secretaria extends Pessoa implements Controlador{
         this.ID = id;
     }
     
+    public int getID(){
+        return this.ID;
+    }
+    
+    public void setID(int id){
+        this.ID = id;
+    }
+    
     @Override
     public Object buscar(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
