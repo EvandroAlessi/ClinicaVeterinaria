@@ -1,5 +1,7 @@
 package clinicaVeterinaria;
 
+import java.util.List;
+
 public class Pet implements Controlador {
     private int id;
     private String nome;
