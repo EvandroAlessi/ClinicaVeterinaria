@@ -2,10 +2,12 @@ package clinicaVeterinaria;
 
 public class Cliente extends Pessoa implements Controlador{
     private String CPF;
+    private List<Pet> pets;
     
-    public Cliente(String CPF, String nome, Endereco endereco, String email, String telefone) {
+    public Cliente(String CPF, String nome, Endereco endereco, String email, String telefone, List<Pet> pets) {
         super(email, nome, telefone, endereco);
         this.CPF = CPF;
+        this.pets = pets;
     }
     
     public Cliente buscarCliente(String cpf){
@@ -16,8 +18,15 @@ public class Cliente extends Pessoa implements Controlador{
         return this.CPF;
     }
 
-    public void setCPF(String CPF) {
+    public void setPets(String CPF) {
         this.CPF = CPF;
+    }
+    public List<Pet> getPets() {
+        return this.pets;
+    }
+
+    public void setPets(List<Pet> pets) {
+        this.pets = pets;
     }
     
     @Override
