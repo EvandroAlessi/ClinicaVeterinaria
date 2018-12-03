@@ -25,12 +25,12 @@ public class Raca implements Controlador{
         this.nome = nome;
     }
     
-    public Pet getPets() {
+    public List<Pet> getPets() {
         return pets;
     }
 
     public void setPets(Pet pets) {
-        this.pets = pets;
+        this.pets = (List<Pet>) pets;
     }
     
     @Override

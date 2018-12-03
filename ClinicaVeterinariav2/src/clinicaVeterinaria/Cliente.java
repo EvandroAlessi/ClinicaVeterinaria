@@ -1,5 +1,7 @@
 package clinicaVeterinaria;
 
+import java.util.List;
+
 public class Cliente extends Pessoa implements Controlador{
     private String CPF;
     private List<Pet> pets;

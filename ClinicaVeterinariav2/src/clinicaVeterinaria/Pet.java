@@ -48,7 +48,7 @@ public class Pet implements Controlador {
         this.nome = nome;
     }
     
-    public String getRaca() {
+    public Raca getRaca() {
         return this.raca;
     }
 

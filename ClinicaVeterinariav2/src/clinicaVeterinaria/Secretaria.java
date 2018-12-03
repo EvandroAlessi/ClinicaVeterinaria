@@ -3,7 +3,7 @@ package clinicaVeterinaria;
 public class Secretaria extends Pessoa implements Controlador{
     private int ID;
     
-    public Secretaria(int id; String email, String nome, String telefone, Endereco endereco) {
+    public Secretaria(int id, String email, String nome, String telefone, Endereco endereco){
         super(email, nome, telefone, endereco);
         this.ID = id;
     }
