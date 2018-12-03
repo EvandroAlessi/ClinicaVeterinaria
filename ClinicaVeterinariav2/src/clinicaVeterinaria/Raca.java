@@ -1,5 +1,7 @@
 package clinicaVeterinaria;
 
+import java.util.List;
+
 public class Raca implements Controlador{
     private TipoAnimal tipoAnimal;
     private List<Pet> pets;
